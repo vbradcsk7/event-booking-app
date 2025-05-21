@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="left">
+        <h1 routerLink="/home">EventPlatform</h1>
+    </div>
+    <div class="right">
+        <p routerLink="/explore">Explorar</p>
+        <p routerLink="/event-plan">Planear un Evento?</p>
+        <p routerLink="/profile">Perfil</p>
+        <p (click)="logout()">Salir</p>
+    </div>
+</div>
+
+<div class="container-m">
+    <div class="left">
+        <h2 routerLink="/home">EventPlatform</h2>
+    </div>
+    <div class="right">
+        @if(!openMenu){
+        <fa-icon [icon]="icon1" (click)="opneColose()"></fa-icon>
+        }@else {
+        <fa-icon [icon]="icon2" (click)="opneColose()"></fa-icon>
+        }
+    </div>
+</div>
+
+@if(openMenu){
+<div class="menu">
+    <p routerLink="/explore">Explorar</p>
+    <p routerLink="/event-plan">Planear un Evento ?</p>
+    <p routerLink="/profile">Perfil</p>
+    <p (click)="logout()">Salir</p>
+</div>
+}

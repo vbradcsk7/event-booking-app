@@ -1,0 +1,22 @@
+<div class="container">
+    @if(isLogin){
+    <div class="box">
+        <h1>Registrese / <span style="cursor: pointer;" (click)="isSignup()">Inicie sesion</span></h1>
+        <form action="">
+            <input type="text" placeholder="Nombre..." [(ngModel)]="user.name" name="name">
+            <input type="email" placeholder="Email..." [(ngModel)]="user.email" name="email">
+            <input type="password" placeholder="Password..." [(ngModel)]="user.password" name="password">
+            <button (click)="onSignup()">Entrar</button>
+        </form>
+    </div>
+    }@else{
+    <div class="box">
+        <h1>Log In / <span style="cursor: pointer;" (click)="isSignup()">Entrar</span></h1>
+        <form action="">
+            <input type="email" placeholder="Email..." [(ngModel)]="user.email" name="email">
+            <input type="password" placeholder="Password..." [(ngModel)]="user.password" name="password">
+            <button (click)="login()">Inicia sesion</button>
+        </form>
+    </div>
+    }
+</div>

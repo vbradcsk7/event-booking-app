@@ -1,0 +1,180 @@
+{
+  "user": [
+    {
+      "id": "def2",
+      "name": "Vivek Dudhatra",
+      "password": "1234",
+      "email": "vivek@test.com"
+    },
+    {
+      "id": "bcf9",
+      "name": "Akhil Hapani",
+      "password": "9909",
+      "email": "akhil@gmail.com"
+    },
+    {
+      "id": "369d",
+      "name": "michael",
+      "password": "durime",
+      "email": "mivh@gm,.com"
+    },
+    {
+      "id": "41f3",
+      "name": "Vivek Dudhatra",
+      "password": "1234",
+      "email": "vivek@test.com"
+    },
+    {
+      "id": "07da",
+      "name": "Vivek Dudhatra",
+      "password": "1234",
+      "email": "vivek@test.com"
+    },
+    {
+      "id": "0070",
+      "name": "Vivek Dudhatra",
+      "password": "1234",
+      "email": "vivek@test.com"
+    },
+    {
+      "id": "5544",
+      "name": "tVivek Dudhatra",
+      "password": "1234",
+      "email": "vivek@test.com"
+    },
+    {
+      "id": "360f",
+      "name": "tVivek Dudhatra",
+      "password": "1234",
+      "email": "vivek@test.com"
+    },
+    {
+      "id": "ca97",
+      "name": "tVivek Dudhatra",
+      "password": "123477uj",
+      "email": "viveikk@test.com"
+    },
+    {
+      "id": "e11a",
+      "name": "",
+      "password": "wdwdwd",
+      "email": "adbq@com.co"
+    }
+  ],
+  "event": [
+    {
+      "id": "f45a",
+      "name": "Tech Fest",
+      "iLnik": "https://cosmicfragnances.in/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-01-at-1.54.30-PM.jpeg",
+      "date": "2025-05-07T05:16:09.737Z",
+      "hostId": "bcf9",
+      "hostname": "Akhil Hapani",
+      "category": "Tech & Innovation",
+      "time": "9.00",
+      "amPm": "AM",
+      "location": "Ahmedabad, Gujarat",
+      "desc": "It is organize with keeping in mind to share the new tech ideas to the related people. ",
+      "totalTicket": 10,
+      "avalTicket": 0,
+      "bookedTicket": 0
+    },
+    {
+      "id": "b7b3",
+      "name": "Festival Celebration",
+      "iLnik": "https://media.istockphoto.com/id/479977238/photo/table-setting-for-an-event-party-or-wedding-reception.jpg?s=612x612&w=0&k=20&c=yIKLzW7wMydqmuItTTtUGS5cYTmrRGy0rXk81AltdTA=",
+      "date": "2025-05-07T05:18:43.471Z",
+      "hostId": "bcf9",
+      "hostname": "Akhil Hapani",
+      "category": "Festival",
+      "time": "6.00",
+      "amPm": "PM",
+      "location": "Goa, Goa",
+      "totalTicket": 10,
+      "avalTicket": 8,
+      "bookedTicket": 2,
+      "desc": "It will be remarkable celebration of upcoming festive season."
+    },
+    {
+      "id": "dd36",
+      "name": "Business Conference",
+      "iLnik": "https://images.stockcake.com/public/2/9/7/2974e4b2-1c1d-4934-8de9-10bd15c7c8c6_large/professional-business-meeting-stockcake.jpg",
+      "date": "2025-05-07T05:31:58.537Z",
+      "hostId": "def2",
+      "hostname": "Vivek Dudhatra",
+      "category": "Business & Networking",
+      "time": "9.00",
+      "amPm": "AM",
+      "location": "Surat, Gujarat",
+      "desc": "This is busine ss meeting where all people will learn some new business strategies.",
+      "totalTicket": 10,
+      "avalTicket": 2,
+      "bookedTicket": 8
+    },
+    {
+      "id": "8cf9",
+      "name": "Sports day celebration",
+      "iLnik": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4ddEMJgYKXTVyuBtBKfRUx91DYYj5yucNHA&s",
+      "date": "2025-05-07T09:16:58.937Z",
+      "hostId": "def2",
+      "hostname": "Vivek Dudhatra",
+      "category": "Sport & Fitness",
+      "time": "9.00",
+      "amPm": "AM",
+      "location": "Surat, Gujarat",
+      "desc": "It is sports day celebration. Book your tickets now.",
+      "totalTicket": 15,
+      "avalTicket": 15,
+      "bookedTicket": 0
+    },
+    {
+      "id": "c929",
+      "name": "Comida de gato",
+      "iLnik": "",
+      "date": "2025-05-21T14:53:15.161Z",
+      "hostId": "e11a",
+      "hostname": "",
+      "category": "Music & Concert",
+      "time": "12",
+      "amPm": "",
+      "location": "Nasik, Gujarat",
+      "desc": "Se va a repartir comida a gatos de la calle",
+      "totalTicket": 2,
+      "avalTicket": 2,
+      "bookedTicket": 0
+    }
+  ],
+  "ticket": [
+    {
+      "id": "aad9",
+      "eventName": "Business Conference",
+      "eventId": "dd36",
+      "userName": "Akhil Hapani",
+      "userId": "bcf9",
+      "ticket": 2
+    },
+    {
+      "id": "6134",
+      "eventName": "Business Conference",
+      "eventId": "dd36",
+      "userName": "Akhil Hapani",
+      "userId": "bcf9",
+      "ticket": 3
+    },
+    {
+      "id": "b60d",
+      "eventName": "Business Conference",
+      "eventId": "dd36",
+      "userName": "Akhil Hapani",
+      "userId": "bcf9",
+      "ticket": 3
+    },
+    {
+      "id": "d209",
+      "eventName": "Festival Celebration",
+      "eventId": "b7b3",
+      "userName": "Vivek Dudhatra",
+      "userId": "def2",
+      "ticket": 2
+    }
+  ]
+}

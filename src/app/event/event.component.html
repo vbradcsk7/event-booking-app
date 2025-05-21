@@ -1,0 +1,31 @@
+<app-header />
+
+<div class="container">
+    <div class="left">
+        <h1>Evento : {{event.name}}</h1>
+        <h4>Categoria : {{event.category}}</h4>
+        <h4>Fecha : {{event.date | date : 'dd-MM-yyyy'}}</h4>
+        <h4>Hora : {{event.time}} {{event.amPm}}</h4>
+        <h4>Ubicacion : {{event.location}}</h4>
+        <h4>Descripcion : {{event.desc}}</h4>
+        @if(event.avalTicket < 10 && event.avalTicket != 0){ <h3>Muevase!! quedan disponible <strong>{{event.avalTicket}} reservas</strong> disponibles.</h3>
+            }
+            @else if(event.avalTicket == 0){
+            <h3>No hay reservas disponibles.</h3>
+            }
+            @else {
+                <h4>Reservas disponibles : {{event.avalTicket}}</h4>
+            }
+            @if(event.avalTicket != 0){
+            <h1>
+                <span (click)="decreaseF()">-</span>
+                <input type="number" disabled="" [(ngModel)]="ticketNumber" name="ticketNumber">
+                <span (click)="increaseF()">+</span>
+            </h1>
+            <button (click)="bookTicket()">Reserve ahora</button>
+            }
+    </div>
+    <div class="right">
+        <img src={{event.iLnik}} alt="">
+    </div>
+</div>

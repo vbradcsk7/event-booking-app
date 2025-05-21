@@ -1,0 +1,80 @@
+<app-header />
+<div class="main">
+    <h1 style="text-align: center; margin-bottom: 6px;">Hello 🖐️ {{user.name}}</h1>
+    <div class="container">
+        <div class="left">
+            <h1>Eventos organizaados por mi <span>:</span></h1>
+            <div class="boxes">
+                @if(eventList.length > 0){
+                @for (item of eventList; track $index) {
+                <div class="box">
+                    <div class="left1">
+                        <h2>Nombre del evento : {{item.name}}</h2>
+                        <h3>Espacios totales : {{item.totalTicket}}</h3>
+                        <h3>Espacios disponibles Ticket : {{item.avalTicket}}</h3>
+                        <h3>Espacios separados : {{item.bookedTicket}}</h3>
+                        <h3>Categoria del evento : {{item.category}}</h3>
+                        <button (click)="getTicketbyEventid(item.id)">Ver todos los espacios</button>
+                    </div>
+                    <div class="img">
+                        <img src={{item.iLnik}} alt="">
+                    </div>
+                </div>
+                }
+                }@else{
+                <div class="box">
+                    <h3>Eventos no planeados por mi. <span style="cursor: pointer; color: #000;"
+                            routerLink="/event-plan">Crear uno ahora!</span></h3>
+                </div>
+                }
+            </div>
+        </div>
+        <div class="right">
+            <h1>Espacios separados por mi <span>:</span></h1>
+            <div class="boxes">
+                @if(ticketList.length > 0){
+                @for (item of ticketList; track $index) {
+                <div class="box">
+                    <div class="left1">
+                        <h2>Nombre del evento : {{item.eventName}}</h2>
+                        <h3>Espacios totales disponibles : {{item.ticket}}</h3>
+                    </div>
+                    <!-- <div class="img">
+                    <img src={{item.iLnik}} alt="">
+                </div> -->
+                </div>
+                }}
+                @else {
+                <div class="box">
+                    <h3>Espacios no separados por mi. <span style="cursor: pointer; color: rgb(54, 9, 9);"
+                            routerLink="/explore">Explorar eventos ahora.</span></h3>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@if(popup){
+<div class="popup">
+    <div class="boxes">
+        @if(ticketListbyEvent.length > 0){
+        @for (item of ticketListbyEvent; track $index) {
+        <div class="box">
+            <div class="left1">
+                <h2>Nombre del evento : {{item.eventName}}</h2>
+                <h3>Espacios : {{item.ticket}}</h3>
+                <h3>Organizado por : {{item.userName}}</h3>
+            </div>
+        </div>
+        }
+        }@else {
+        <div class="box">
+            <h2>No hay espacios separados para este evento.</h2>
+        </div>
+        }
+        <button (click)="close()">Cerrar?</button>
+    </div>
+</div>
+}

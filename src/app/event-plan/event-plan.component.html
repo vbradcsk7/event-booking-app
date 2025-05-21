@@ -1,0 +1,45 @@
+<app-header />
+
+<div class="container">
+    <form action="">
+        <h1>📅 Planear un evento</h1>
+        <div class="div">
+            <input type="text" placeholder="Nombre evento..." [(ngModel)]="event.name" name="name">
+            <input type="text" placeholder="Enlace de la Imagen..." [(ngModel)]="event.iLnik" name="iLnik">
+            <input type="date">
+            <div>
+                <input type="text" placeholder="Hora" [(ngModel)]="event.time" name="time">
+                <select id="" [(ngModel)]="event.amPm" name="name">
+                    <option value="" selected disabled hidden>AM/PM</option>
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <div class="lable">
+                <label for="">Reservas Totales :</label>
+                <input type="number" [(ngModel)]="event.totalTicket" name="totalTicket">
+            </div>
+            <select id="" [(ngModel)]="event.category" name="category">
+                <option value="" selected disabled hidden>Seleccione la Categoria...</option>
+                @for (item of categoryList; track $index) {
+                <option [value]="item">{{item}}</option>
+                }
+            </select>
+            <select id="" [(ngModel)]="stateName" name="stateName">
+                <option value="" selected disabled hidden>Seleccione la cantidad...</option>
+                @for (item of stateList; track $index) {
+                <option [value]="item">{{item}}</option>
+                }
+            </select>
+            <select [(ngModel)]="cityName" name="cityName">
+                <option value="" disabled hidden selected>Ubicacion...</option>
+                @for (item of cityList; track $index) {
+                <option [value]="item">{{item}}</option>
+                }
+            </select>
+            <textarea name="desc" id="" placeholder="Descripcion del evento..." rows="3" [(ngModel)]="event.desc">
+            </textarea>
+            <button (click)="submit()">Enviar</button>
+        </div>
+    </form>
+</div>
